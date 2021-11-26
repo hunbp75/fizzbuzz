@@ -1,12 +1,12 @@
-function fizzbuzz(num) {
-    if (num % 3 === 0 && num % 5 === 0) {
+function fizzbuzz(number) {
+    if (number % 3 === 0 && number % 5 === 0) {
         return "fizzbuzz";
-    } else if (num % 3 === 0) {
+    } else if (number % 3 === 0) {
         return "fizz";
-    } else if (num % 5 === 0) {
+    } else if (number % 5 === 0) {
         return "buzz";    
     }else {
-        return num;
+        return number;
     }
 }
 
@@ -17,10 +17,12 @@ function write(message) {
 }
 
 function main() {
-    for (let i = 0; i < 100; i++) {
+    for (let i = 1; i <= 30; i++) {
       let result = fizzbuzz(i);  
       write(result);
     }
 }
 
 window.addEventListener("load", main);  
+
+
